@@ -9,14 +9,18 @@ use Illuminate\Database\Eloquent\Casts\Attribute;
 class Item extends Model
 {
     use HasFactory;
-    /**
-     * fillable
-     * 
-     * @var array
-     */
-    protected $fillable = [
-        'title',
-        'content',
-    ];
+
+    protected $guarded = [];
+    // /**
+    //  * fillable
+    //  * 
+    //  * @var array
+    //  */
+    // protected $fillable = [
+    //     'title',
+    //     'content',
+    //     'stok',
+    //     'harga',
+    // ];
     
 }
